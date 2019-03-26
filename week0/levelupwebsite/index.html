@@ -3,14 +3,63 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Our First Website</title>
+		<link rel="stylesheet" href="normalize.css">
 		<link rel="stylesheet" href="styles.css">
 	</head>
 
 
 	<body>
-		<!-- this is a comment-->
-		<h1>Our First Website!</h1>
+		<header class="site-header clearfix">
+			<h1>Our First Website!</h1>
+			
+			<nav class="main-nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="billboard">
+				<h2>Learning with Level Up Tutorials</h2>
+				<p id="intro-text" class="intro-class">
+					Simple website built with Level Up
+				</p>
 
-		<p>Our first text.</p>
+			</section>
+
+			<div class="column-wrapper clearfix">
+
+				<section class="main-col">
+					<h3>
+						Learn about Level Up!
+					</h3>
+					<p>
+						Some text about Level Up
+					</p>
+				</section>
+
+				<aside class="sidebar-col">
+					<h4>Sign Up</h4>
+					<p>
+						Sign up to learn more about the website!
+					</p>
+				</aside>
+
+			</div>
+			
+
+		</main>
+
+		<footer id="footer" class="main-footer">
+			<p class="copyright clearfix">
+				Level Up&copy; 2019
+			</p>
+			<ul class="footer-nav clearfix">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</footer>
+
 	</body>
 </html>

@@ -1,7 +1,108 @@
-h1 {
-	color: #00FF00;
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
 
-p {
-	color: #123456;
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.site-header {
+	background: #3F51B5;
+	color: #ffffff;
+	padding: 10px 5%;
+	box-shadow: 0 1px 3px #999;
+}
+
+.site-header h1{
+	margin: 0;
+	font-size: 20px;
+	float: left;
+}
+
+.main-nav {
+	float: right;
+}
+
+.main-nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.main-nav ul li{
+	display: inline;
+}
+
+.main-nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+.intro-class {
+	font-size: 18px;
+}
+
+.billboard {
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 40px;
+}
+
+.billboard h2 {
+	margin-top: 0;
+}
+
+.column-wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.main-col {
+	float: left;
+	width: 70%;
+}
+
+.sidebar-col {
+	background: #ccc;
+	float: right;
+	width: 25%;
+	padding: 20px 2.5%;
+}
+
+.main-footer {
+	background: #333;
+	color: white;
+	padding: 40px 5%;
+}
+
+.copyright {
+	float: left;
+}
+
+.footer-nav {
+	list-style: none;
+	float: right;
+}
+
+.footer-nav li {
+	float: left;
+}
+
+.main-footer a {
+	color: white;
+	font-size: 12px;
+
+}
+
+.footer-nav li + li {
+	margin-left: 10px;
+
 }
